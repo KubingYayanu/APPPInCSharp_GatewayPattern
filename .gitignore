@@ -1,3 +1,6 @@
 .vs/
 APPPInCSharp_GatewayPattern.Console/bin/
 APPPInCSharp_GatewayPattern.Console/obj/
+APPPInCSharp_GatewayPattern.UnitTests/bin/
+APPPInCSharp_GatewayPattern.UnitTests/obj/
+packages/

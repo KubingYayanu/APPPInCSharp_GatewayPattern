@@ -44,6 +44,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -58,10 +59,19 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AbstractDbGatewayTest.cs" />
+    <Compile Include="DbOrderGatewayTests.cs" />
+    <Compile Include="DbProductGatewayTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\APPPInCSharp_GatewayPattern.Console\APPPInCSharp_GatewayPattern.Console.csproj">
+      <Project>{3BE2E1E1-22BC-4A77-B4B4-F13037115F5B}</Project>
+      <Name>APPPInCSharp_GatewayPattern.Console</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
